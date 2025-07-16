@@ -6,5 +6,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: 'https://ivanbardon.github.io/xavi/',
+  base: 'https://ivanbardon.github.io/xavi/webxavi',
 })
