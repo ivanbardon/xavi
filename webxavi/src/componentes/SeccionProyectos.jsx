@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ProyectoSoul from "./ProyectoSoul";
 
 function SeccionProyectos() {
   const [openModal, setOpenModal] = useState(null);
@@ -46,8 +47,7 @@ function SeccionProyectos() {
             </button>
             {openModal === "Soul Drawing" && (
               <div className="text-center">
-                <h2 className="text-3xl font-bold mb-4">Soul Drawing</h2>
-                <p className="text-lg">Descripción del proyecto 1.</p>
+                <ProyectoSoul />
               </div>
             )}
             {openModal === "La Vida Collage" && (

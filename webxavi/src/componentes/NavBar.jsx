@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <nav className="border-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-50">
       {/* Logo a la izquierda */}
-      <img src={logo} alt="Logo" className="w-50" />
+      <img src={logo} alt="Logo" className="w-40" />
 
       {/* Botones redondos a la derecha */}
       <div className="flex space-x-4">
