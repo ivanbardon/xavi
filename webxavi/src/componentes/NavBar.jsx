@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaInstagram, FaFacebook, FaWhatsapp, FaGoogle } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp, FaGoogle, FaCheck } from "react-icons/fa";
 import logo from '../assets/logo.png';
 
 function NavBar() {
@@ -54,7 +54,7 @@ function NavBar() {
               onClick={handleClose}
               aria-label="Cerrar"
             >
-              ✖️
+              <FaCheck className="text-2xl" />
             </button>
             {openModal === "Instagram" && (
               <div>
