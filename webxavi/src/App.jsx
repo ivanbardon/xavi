@@ -12,7 +12,7 @@ function App() {
     <>
       <Hero />
       <NavBar />
-      <main className='sticky z-20 bg-white p-4'> 
+      <main className='sticky z-20 bg-white p-4 text-justify'> 
         <h1 className='text-3xl font-bold py-4 text-center'>XavierCarrillo.com</h1>
         <p className='text-center text-lg mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut consequatur reprehenderit voluptates totam nam? Cum suscipit voluptatum molestiae quasi consequuntur temporibus aliquam beatae dolores iure, deleniti eos fuga quis!</p>
         <p className='text-center text-lg mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut consequatur reprehenderit voluptates totam nam? Cum suscipit voluptatum molestiae quasi consequuntur temporibus aliquam beatae dolores iure, deleniti eos fuga quis!</p>
@@ -21,8 +21,8 @@ function App() {
         <SeccionProyectos />
         <p className='text-center text-lg mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut consequatur reprehenderit voluptates totam nam? Cum suscipit voluptatum molestiae quasi consequuntur temporibus aliquam beatae dolores iure, deleniti eos fuga quis!</p>
         <p className='text-center text-lg mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut consequatur reprehenderit voluptates totam nam? Cum suscipit voluptatum molestiae quasi consequuntur temporibus aliquam beatae dolores iure, deleniti eos fuga quis!</p>
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }
