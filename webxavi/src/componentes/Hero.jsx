@@ -4,13 +4,12 @@ import React from 'react';
 
 function Hero() {
   return (
-    <header className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('/path/to/your/image.jpg')" }}>
-      <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
-        <h1 className="text-white text-5xl font-bold text-center">Aquí pondremos el puto video que seguro que todavía no has hecho</h1>
-        <p></p>
-      </div>
-    </header>
-  );
+    <section className="w-dvw h-3000 relative">
+      <img className='w-dvw h-dvh object-cover fixed top-0 left-0 z-0'
+        src="frames/ezgif-split/ezgif-frame-001.jpg"
+      />
+    </section>
+  ); 
 }
 
 export default Hero;
