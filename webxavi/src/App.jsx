@@ -12,6 +12,7 @@ function App() {
   return (
     <>
     <Hero />
+    <div style={{ height: '45vh' }} /> {/* Espacio para completar la animación */}
     <NavBar />
     <Bio />
     <SeccionProyectos />
