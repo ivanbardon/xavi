@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProyectoSoul from "./ProyectoSoul";
+import ProyectoCollage from "./ProyectoCollage";
 
 function SeccionProyectos() {
   const [openModal, setOpenModal] = useState(null);
@@ -71,8 +72,7 @@ function SeccionProyectos() {
             )}
             {openModal === "La Vida Collage" && (
               <div className="text-center">
-                <h2 className="text-3xl font-bold mb-4">La Vida Collage</h2>
-                <p className="text-lg">Descripción del proyecto 2.</p>
+                <ProyectoCollage />
               </div>
             )}
             {openModal === "La Mar de Net" && (
