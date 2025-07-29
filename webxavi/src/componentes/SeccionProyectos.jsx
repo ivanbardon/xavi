@@ -31,7 +31,7 @@ function SeccionProyectos() {
           onClick={() => handleOpen("Soul Drawing")}
         >
           <h3 className="text-xl font-semibold">Soul Drawing</h3>
-          <p className="text-gray-600">Ladron de Almas</p>
+          <p className="text-gray-600">Ladrón de Almas</p>
         </div>
         <div
           className="bg-white p-4 rounded-lg shadow cursor-pointer hover:bg-gray-100"

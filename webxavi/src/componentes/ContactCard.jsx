@@ -1,4 +1,4 @@
-import { FaPhone, FaWhatsapp, FaEnvelope, FaPalette } from "react-icons/fa";
+import { FaPhone, FaWhatsapp, FaEnvelope, FaPalette, FaTelegramPlane } from "react-icons/fa";
 
 export default function ContactCard({ name, email, phone }) {
   const handleCall = () => {
@@ -14,7 +14,7 @@ export default function ContactCard({ name, email, phone }) {
   };
 
   const handleGallery = () => {
-    window.open("https://galeria-arte.com", "_blank");
+    window.open("https://g.co/kgs/5H3ub1d", "_blank");
   };
 
   return (
@@ -32,7 +32,7 @@ export default function ContactCard({ name, email, phone }) {
       <div className="space-y-4 w-full max-w-md mx-auto">
         <button
           onClick={handleCall}
-          className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
+          className="w-full flex flex-row items-center justify-start gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
         >
           <FaPhone className="w-5 h-5" />
           <span>Llamar</span>
@@ -40,7 +40,7 @@ export default function ContactCard({ name, email, phone }) {
 
         <button
           onClick={handleWhatsApp}
-          className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
+          className="w-full flex flex-row items-center justify-start gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
         >
           <FaWhatsapp className="w-5 h-5" />
           <span>WhatsApp</span>
@@ -48,15 +48,15 @@ export default function ContactCard({ name, email, phone }) {
 
         <button
           onClick={handleEmail}
-          className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
+          className="w-full flex flex-row items-center justify-start gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
         >
-          <FaEnvelope className="w-5 h-5" />
-          <span>Enviar Email</span>
+          <FaTelegramPlane className="w-5 h-5" />
+          <span>Email</span>
         </button>
 
         <button
           onClick={handleGallery}
-          className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
+          className="w-full flex flex-row items-center justify-start gap-3 bg-white hover:bg-gray-100 text-black border border-black font-medium py-3 px-6 rounded-lg transition-all duration-200"
         >
           <FaPalette className="w-5 h-5" />
           <span>Galería de Arte</span>
@@ -67,16 +67,16 @@ export default function ContactCard({ name, email, phone }) {
       <div className="mt-8 pt-6 border-t border-gray-200 w-full max-w-md mx-auto">
         <div className="flex justify-center space-x-6 text-sm text-gray-700">
           <div className="text-center">
-            <div className="font-semibold text-black">150+</div>
-            <div>Proyectos</div>
+            <div className="font-semibold text-black">800+</div>
+            <div>Obras</div>
           </div>
           <div className="text-center">
-            <div className="font-semibold text-black">5</div>
+            <div className="font-semibold text-black">27</div>
             <div>Años exp.</div>
           </div>
           <div className="text-center">
-            <div className="font-semibold text-black">98%</div>
-            <div>Satisfacción</div>
+            <div className="font-semibold text-black">100%</div>
+            <div>Compromiso</div>
           </div>
         </div>
       </div>
