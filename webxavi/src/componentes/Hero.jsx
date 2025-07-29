@@ -72,8 +72,8 @@ function Hero() {
 
   if (loading) {
     return (
-      <section className="w-dvw h-dvh flex items-center justify-center bg-black">
-        <span className="text-white text-2xl">Cargando animación...</span>
+      <section className="w-dvw h-dvh flex items-center justify-center bg-white">
+        <span className="text-black text-2xl">Cargando animación...</span>
       </section>
     );
   }
