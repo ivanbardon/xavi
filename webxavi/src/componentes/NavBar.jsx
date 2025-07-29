@@ -22,9 +22,14 @@ function NavBar() {
   }, [openModal]);
 
   return (
-    <nav className="b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-2">
+    <nav className="border-b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-2 navbar">
       {/* Logo a la izquierda */}
-      <img src={logo} alt="Logo" className="w-40" />
+      <img
+        src={logo}
+        alt="Logo"
+        className="w-40 cursor-pointer"
+        onClick={() => window.location.reload()}
+      />
 
       {/* Botones redondos a la derecha */}
       <div className="flex space-x-4">
@@ -60,7 +65,7 @@ function NavBar() {
 
       {/* Popups */}
       {openModal && (
-        <div className="fixed inset-0 bg-white z-9 flex items-center justify-center">
+        <div className="fixed inset-0 bg-white flex items-center justify-center z-3">
           <div className="fixed inset-0 bg-white flex flex-col justify-center items-center overflow-hidden">
             <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
@@ -88,7 +93,7 @@ function NavBar() {
               </div>
             )}
             {openModal === "Telegram" && (
-              <div className="w-full h-full flex items-center justify-center">
+              <div id="contactModal" className="w-full h-full flex items-center justify-center">
                 <ContactCard name="Xavier Carrillo" email="icscarrillo@gmail.com" phone="+34604881468" />
               </div>
             )}

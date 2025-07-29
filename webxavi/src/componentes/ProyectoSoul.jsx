@@ -3,7 +3,7 @@ import Botonera from "./Botonera";
 
 function ProyectoSoul() {
   return (
-    <div className="p-4 mb-4">
+    <div className="p-4 mb-4 relative z-5 bg-white">
       <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto">
         <img
           src="/xavi/logo-soul2.png"
@@ -21,7 +21,7 @@ function ProyectoSoul() {
           Soul Drawings es una performance de arte abstracto en la que Xavier Carrillo plasma sobre el lienzo lo que siente de la persona en ese instante de sus vidas. A través de la mirada y de un solo trazo, el artista representa el alma del público de una forma auténtica y cautivadora
         </p>
         <hr className="my-4 text-gray-300" />
-        <Botonera />
+        <Botonera downloadUrl="/xavi/logo-soul2.png" />
       </div>
     </div>
   );

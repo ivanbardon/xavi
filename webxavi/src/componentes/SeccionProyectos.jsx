@@ -23,7 +23,7 @@ function SeccionProyectos() {
   }, [openModal]);
 
   return (
-    <section className="container mx-auto p-4 bg-white relative z-0">
+    <section className="container mx-auto p-4 bg-white relative z-1">
       <hr className="border-gray-300 mb-8" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
@@ -58,7 +58,7 @@ function SeccionProyectos() {
 
       {/* Popups */}
       {openModal && (
-        <div className="fixed inset-0 bg-white bg-opacity-40">
+        <div className="fixed inset-0 bg-white bg-opacity-40 z-4 pt-14">
           <div className="bg-white w-full h-full">
             <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"

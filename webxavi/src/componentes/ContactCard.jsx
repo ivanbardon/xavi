@@ -6,7 +6,7 @@ export default function ContactCard({ name, email, phone }) {
   };
 
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/${phone}?text=Hola!%20Me%20gustaría%20contactarte`, "_blank");
+    window.open(`https://wa.me/${phone}?text=Hola!%20Me%20gustaría%20contactarte`, "_self");
   };
 
   const handleEmail = () => {
@@ -14,7 +14,7 @@ export default function ContactCard({ name, email, phone }) {
   };
 
   const handleGallery = () => {
-    window.open("https://g.co/kgs/5H3ub1d", "_blank");
+    window.open("https://g.co/kgs/5H3ub1d", "_self");
   };
 
   return (
