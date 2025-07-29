@@ -8,7 +8,7 @@ function ProyectoFotoDesmadre() {
         <img
           src="/xavi/fotodesmadre1.png"
           alt="Foto Desmadre - Tu foto más loca"
-          className="w-80-auto object-cover flex justify-center mx-auto mb-8"
+          className="w-30 h-auto object-cover flex justify-center mx-auto mb-8"
         />
         <img
           src="/xavi/fotodesmadre4.png"
@@ -16,7 +16,7 @@ function ProyectoFotoDesmadre() {
           className="w-70 h-auto object-cover flex justify-center mx-auto mb-8"
         />
         <p className="text-lg text-gray-700 mt-4">
-          Es un proyecto artístico y educativo que busca concienciar sobre el problema del plástico en el mar desde una perspectiva creativa y no impositiva
+          No es una foto… es una explosión de tu lado más salvaje, divertido e inesperado. Aquí no buscamos tu mejor pose, buscamos la más loca. Déjate llevar, ríe, grita, muévete…  y transformaré esa energía en una  obra artística única, con técnica mixta: fotografía + pintura
         </p>
         <hr className="my-4 text-gray-300" />
         <Botonera />

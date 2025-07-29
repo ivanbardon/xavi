@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaInstagram, FaFacebook, FaWhatsapp, FaGoogle, FaCheck } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp, FaCheck, FaTiktok, FaTelegramPlane,  } from "react-icons/fa";
 import logo from '../assets/logo.png';
 
 function NavBar() {
@@ -31,17 +31,17 @@ function NavBar() {
         </button>
         <button
           className="rounded-full h-8 w-8 flex items-center justify-center"
-          onClick={() => handleOpen("Whatsapp")}
-          aria-label="WhatsApp"
+          onClick={() => handleOpen("Tiktok")}
+          aria-label="Tiktok"
         >
-          <FaWhatsapp className="text-3xl" />
+          <FaTiktok className="text-3xl" />
         </button>
         <button
           className="rounded-full h-8 w-8 flex items-center justify-center"
-          onClick={() => handleOpen("Google")}
-          aria-label="Google"
+          onClick={() => handleOpen("Telegram")}
+          aria-label="Telegram"
         >
-          <FaGoogle className="text-3xl" />
+          <FaTelegramPlane className="text-3xl" />
         </button>
       </div>
 

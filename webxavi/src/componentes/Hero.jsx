@@ -47,7 +47,7 @@ function Hero() {
         // Limita el scroll solo al alto del Hero (viewport)
         const maxScroll = window.innerHeight;
         const scrollPercent = Math.min(scrollTop / maxScroll, 1);
-        const fadeDistance = 200; // Distancia para el fade-out
+        const fadeDistance = 100; // Distancia para el fade-out
         const opacity = Math.max(0, 1 - scrollTop / fadeDistance);
         setTextOpacity(opacity);
 
@@ -86,7 +86,7 @@ function Hero() {
         alt="Hero Frame"
       />
       <div
-        className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center z-2 transition-opacity duration-300"
+        className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center z-2 transition-opacity duration-100"
         style={{ opacity: textOpacity }}
       >
         <h2 className="text-4xl font-bold text-black drop-shadow-lg p-1 text-center">Arte eres tú</h2>

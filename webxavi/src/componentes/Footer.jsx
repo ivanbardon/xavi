@@ -1,8 +1,9 @@
 function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <footer className="bg-gray-800 text-white py-4 border-t-2 border-gray-700">
+    <footer className="py-4 border-t-1 border-gray-200 bg-gray-50">
       <div className="container mx-auto text-center">
-        <p>&copy; 2023 Xavier Carrillo. Todos los derechos reservados.</p>
+        <p>&copy; {year} Xavier Carrillo. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
