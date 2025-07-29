@@ -1,12 +1,25 @@
-import React, { useState } from "react";
-import { FaInstagram, FaFacebook, FaWhatsapp, FaCheck, FaTiktok, FaTelegramPlane,  } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaInstagram, FaFacebook, FaWhatsapp, FaCheck, FaTiktok, FaTelegramPlane } from "react-icons/fa";
 import logo from '../assets/logo.png';
+import ContactCard from "./ContactCard";
 
 function NavBar() {
   const [openModal, setOpenModal] = useState(null);
 
   const handleOpen = (modal) => setOpenModal(modal);
   const handleClose = () => setOpenModal(null);
+
+  // Bloquea el scroll del body cuando el modal está abierto
+  useEffect(() => {
+    if (openModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [openModal]);
 
   return (
     <nav className="b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-2">
@@ -15,27 +28,27 @@ function NavBar() {
 
       {/* Botones redondos a la derecha */}
       <div className="flex space-x-4">
-        <button
-          className=" rounded-full h-8 w-8 flex items-center justify-center"
-          onClick={() => handleOpen("Instagram")}
+        <a
+          className="rounded-full h-8 w-8 flex items-center justify-center"
+          href="https://www.instagram.com/xaviercarrillo.oficial/"
           aria-label="Instagram"
         >
           <FaInstagram className="text-3xl" />
-        </button>
-        <button
+        </a>
+        <a
           className="rounded-full h-8 w-8 flex items-center justify-center"
-          onClick={() => handleOpen("Facebook")}
+          href="https://www.facebook.com/xaviercarrillo.oficial/"
           aria-label="Facebook"
         >
           <FaFacebook className="text-3xl" />
-        </button>
-        <button
+        </a>
+        <a
           className="rounded-full h-8 w-8 flex items-center justify-center"
-          onClick={() => handleOpen("Tiktok")}
+          href="https://www.tiktok.com/@xaviercarrillo.com"
           aria-label="Tiktok"
         >
           <FaTiktok className="text-3xl" />
-        </button>
+        </a>
         <button
           className="rounded-full h-8 w-8 flex items-center justify-center"
           onClick={() => handleOpen("Telegram")}
@@ -47,8 +60,8 @@ function NavBar() {
 
       {/* Popups */}
       {openModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-          <div className="bg-white w-full h-full flex flex-col justify-center items-center relative">
+        <div className="fixed inset-0 bg-white z-9 flex items-center justify-center">
+          <div className="fixed inset-0 bg-white flex flex-col justify-center items-center overflow-hidden">
             <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
               onClick={handleClose}
@@ -70,14 +83,13 @@ function NavBar() {
             )}
             {openModal === "Whatsapp" && (
               <div>
-                <h2 className="text-3xl font-bold mb-4">WhatsApp</h2>
-                <p className="text-lg">Contenido de WhatsApp.</p>
+                <h2 className="text-3xl font-bold mb-4">TikTok</h2>
+                <p className="text-lg">Contenido de TikTok.</p>
               </div>
             )}
-            {openModal === "Google" && (
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Google</h2>
-                <p className="text-lg">Contenido de Google.</p>
+            {openModal === "Telegram" && (
+              <div className="w-full h-full flex items-center justify-center">
+                <ContactCard name="Xavier Carrillo" email="icscarrillo@gmail.com" phone="+34604881468" />
               </div>
             )}
           </div>
