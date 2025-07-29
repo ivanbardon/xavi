@@ -9,7 +9,7 @@ function NavBar() {
   const handleClose = () => setOpenModal(null);
 
   return (
-    <nav className="b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-50">
+    <nav className="b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-2">
       {/* Logo a la izquierda */}
       <img src={logo} alt="Logo" className="w-40" />
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Bio() {
   return (
-    <section className="bio-section z-0 relative flex flex-col items-center justify-center  bg-white">
+    <section className="bio-section relative z-1 bg-white">
       <img
         src="/xavi/xavi-contacto.png"
         alt="Mi foto"
