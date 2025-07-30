@@ -15,7 +15,7 @@ const ActionButton = ({ icon, text, onClick }) => (
 // Sub-componente para la cabecera del perfil
 const ProfileHeader = ({ name, email }) => (
   <div className="text-center mb-8 w-full">
-    <h1 className="text-2xl font-bold text-black mb-2">{name}</h1>
+    <h1 className="text-3xl font-bold text-black mb-2">{name}</h1>
     <p className="text-black font-semibold mb-2">Artista multidisciplinar</p>
     <p className="text-gray-700 text-sm leading-relaxed px-4">
       Contacto: <span className="font-semibold">{email}</span>
@@ -26,7 +26,7 @@ const ProfileHeader = ({ name, email }) => (
 // Sub-componente para las estadísticas
 const StatsFooter = () => (
   <div className="mt-8 pt-6 border-t border-gray-200 w-full max-w-md mx-auto">
-    <div className="flex justify-center space-x-6 text-sm text-gray-700">
+    <div className="flex justify-center space-x-8 text-sm text-gray-700">
       <div className="text-center">
         <div className="font-semibold text-black">800+</div>
         <div>Obras</div>
@@ -46,22 +46,22 @@ const StatsFooter = () => (
 export default function ContactCard({ name, email, phone }) {
   const actions = [
     {
-      icon: <FaPhone className="w-5 h-5" />,
+      icon: <FaPhone className="w-8 h-auto mr-4" />,
       text: "Llamar",
       handler: () => window.open(`tel:${phone}`, "_self"),
     },
     {
-      icon: <FaWhatsapp className="w-5 h-5" />,
+      icon: <FaWhatsapp className="w-8 h-auto mr-4" />,
       text: "WhatsApp",
       handler: () => window.open(`https://wa.me/${phone}?text=Hola!%20Me%20gustaría%20contactarte`, "_self"),
     },
     {
-      icon: <FaTelegramPlane className="w-5 h-5" />,
+      icon: <FaTelegramPlane className="w-8 h-auto mr-4" />,
       text: "Email",
       handler: () => window.open(`mailto:${email}?subject=Contacto&body=Hola!%20Me%20gustaría%20contactarte`, "_self"),
     },
     {
-      icon: <FaPalette className="w-5 h-5" />,
+      icon: <FaPalette className="w-8 h-auto mr-4" />,
       text: "Galería de Arte",
       handler: () => window.open("https://g.co/kgs/5H3ub1d", "_self"),
     },
@@ -71,7 +71,7 @@ export default function ContactCard({ name, email, phone }) {
     <div className="w-full h-full flex flex-col items-center justify-center p-4 bg-white">
       <ProfileHeader name={name} email={email} />
       
-      <div className="space-y-4 w-full max-w-md mx-auto">
+      <div className="space-y-4 w-full max-w-md mx-auto text-2xl">
         {actions.map((action, index) => (
           <ActionButton
             key={index}

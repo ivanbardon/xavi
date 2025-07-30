@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+
 // --- Custom Hooks ---
 
 /**
@@ -87,22 +88,22 @@ const LoadingScreen = () => (
 );
 
 const HeroText = ({ scrollPosition, show }) => {
+  const isScrolling = scrollPosition > 0;
   const style = (delay) => ({
-    transition: `opacity 0.5s ease-out ${delay}s, transform 0.5s ease-out ${delay}s`,
+    transition: !isScrolling
+      ? `opacity 0.5s ease-out ${delay}s, transform 0.5s ease-out ${delay}s`
+      : 'none',
     opacity: show ? 1 - Math.min(scrollPosition / 300, 1) : 0,
-    transform: `translateY(${show ? -scrollPosition / 5 : 20}px)`,
+    transform: `translateY(${show ? -scrollPosition / 1 : 20}px)`,
   });
 
   return (
-    <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center z-20">
+    <div className="absolute bottom-10 left-0 w-full h-full flex flex-col items-center justify-end z-20">
       <div style={style(0.2)}>
-        <h2 className="text-5xl font-bold text-black drop-shadow-lg p-2 text-center">Arte eres tú</h2>
-      </div>
-      <div style={style(0.4)}>
-        <h2 className="text-5xl font-bold text-black drop-shadow-lg p-2 text-center">cuando sonries</h2>
+        <h2 className="elegantshadow text-5xl font-bold text-black  p-2 text-center">Arte eres tú cuando sonries</h2>
       </div>
       <div style={style(0.6)}>
-        <p className="text-2xl text-black drop-shadow mt-4">Desliza para descubrir más</p>
+        <p className="text-2xl text-black drop-shadow mt-8">Desliza para descubrir más</p>
       </div>
     </div>
   );

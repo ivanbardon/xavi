@@ -39,28 +39,28 @@ function NavBar() {
           href="https://www.instagram.com/xaviercarrillo.oficial/"
           aria-label="Instagram"
         >
-          <FaInstagram className="text-3xl" />
+          <FaInstagram className="text-9xl" />
         </a>
         <a
           className="rounded-full h-8 w-8 flex items-center justify-center"
           href="https://www.facebook.com/xaviercarrillo.oficial/"
           aria-label="Facebook"
         >
-          <FaFacebook className="text-3xl" />
+          <FaFacebook className="text-9xl" />
         </a>
         <a
           className="rounded-full h-8 w-8 flex items-center justify-center"
           href="https://www.tiktok.com/@xaviercarrillo.com"
           aria-label="Tiktok"
         >
-          <FaTiktok className="text-3xl" />
+          <FaTiktok className="text-9xl" />
         </a>
         <button
           className="rounded-full h-8 w-8 flex items-center justify-center"
           onClick={() => handleOpen("Telegram")}
           aria-label="Telegram"
         >
-          <FaTelegramPlane className="text-3xl" />
+          <FaTelegramPlane className="text-9xl" />
         </button>
       </div>
 
