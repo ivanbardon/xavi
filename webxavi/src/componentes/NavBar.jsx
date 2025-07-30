@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp, FaCheck, FaTiktok, FaTelegramPlane } from "react-icons/fa";
 import logo from '../assets/logo.png';
 import ContactCard from "./ContactCard";
@@ -22,7 +23,7 @@ function NavBar() {
   }, [openModal]);
 
   return (
-    <nav className="border-b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-2 navbar">
+    <nav className="border-b-2 border-gray-200 p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-30 navbar">
       {/* Logo a la izquierda */}
       <img
         src={logo}
@@ -64,42 +65,33 @@ function NavBar() {
       </div>
 
       {/* Popups */}
-      {openModal && (
-        <div className="fixed inset-0 bg-white flex items-center justify-center z-3">
-          <div className="fixed inset-0 bg-white flex flex-col justify-center items-center overflow-hidden">
-            <button
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
-              onClick={handleClose}
-              aria-label="Cerrar"
-            >
-              <FaCheck className="text-2xl" />
-            </button>
-            {openModal === "Instagram" && (
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Instagram</h2>
-                <p className="text-lg">Contenido del Instagram.</p>
-              </div>
-            )}
-            {openModal === "Facebook" && (
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Facebook</h2>
-                <p className="text-lg">Contenido de Facebook.</p>
-              </div>
-            )}
-            {openModal === "Whatsapp" && (
-              <div>
-                <h2 className="text-3xl font-bold mb-4">TikTok</h2>
-                <p className="text-lg">Contenido de TikTok.</p>
-              </div>
-            )}
-            {openModal === "Telegram" && (
-              <div id="contactModal" className="w-full h-full flex items-center justify-center">
-                <ContactCard name="Xavier Carrillo" email="icscarrillo@gmail.com" phone="+34604881468" />
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      {openModal &&
+        ReactDOM.createPortal(
+          <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
+            <div className="fixed inset-0 bg-white flex flex-col justify-center items-center overflow-hidden">
+              <button
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
+                onClick={handleClose}
+                aria-label="Cerrar"
+              >
+                <FaCheck className="text-2xl" />
+              </button>
+              {openModal === "Telegram" && (
+                <div
+                  id="contactModal"
+                  className="w-full h-full flex items-center justify-center"
+                >
+                  <ContactCard
+                    name="Xavier Carrillo"
+                    email="hola@xaviercarrillo.com"
+                    phone="+34604881468"
+                  />
+                </div>
+              )}
+            </div>
+          </div>,
+          document.getElementById("modal-root")
+        )}
     </nav>
   );
 }

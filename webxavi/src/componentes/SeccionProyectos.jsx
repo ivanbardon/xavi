@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import ProyectoSoul from "./ProyectoSoul";
 import ProyectoCollage from "./ProyectoCollage";
 import ProyectoMar from "./ProyectoMar";
@@ -23,7 +24,7 @@ function SeccionProyectos() {
   }, [openModal]);
 
   return (
-    <section className="container mx-auto p-4 bg-white relative z-1">
+    <section className="container mx-auto p-4 bg-white relative z-10">
       <hr className="border-gray-300 mb-8" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
@@ -57,39 +58,41 @@ function SeccionProyectos() {
       </div>
 
       {/* Popups */}
-      {openModal && (
-        <div className="fixed inset-0 bg-white bg-opacity-40 z-4 pt-14">
-          <div className="bg-white w-full h-full">
-            <button
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
-              onClick={handleClose}
-              aria-label="Cerrar"
-            >
-              ✖️
-            </button>
-            {openModal === "Soul Drawing" && (
-              <div className="text-center">
-                <ProyectoSoul />
-              </div>
-            )}
-            {openModal === "La Vida Collage" && (
-              <div className="text-center">
-                <ProyectoCollage />
-              </div>
-            )}
-            {openModal === "La Mar de Net" && (
-              <div className="text-center">
-                <ProyectoMar />
-              </div>
-            )}
-            {openModal === "Foto Desmadre" && (
-              <div className="text-center">
-                <ProyectoFotoDesmadre />
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      {openModal &&
+        ReactDOM.createPortal(
+          <div className="fixed inset-0 bg-white bg-opacity-40 z-40">
+            <div className="bg-white w-full h-full">
+              <button
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
+                onClick={handleClose}
+                aria-label="Cerrar"
+              >
+                ✖️
+              </button>
+              {openModal === "Soul Drawing" && (
+                <div className="text-center">
+                  <ProyectoSoul />
+                </div>
+              )}
+              {openModal === "La Vida Collage" && (
+                <div className="text-center">
+                  <ProyectoCollage />
+                </div>
+              )}
+              {openModal === "La Mar de Net" && (
+                <div className="text-center">
+                  <ProyectoMar />
+                </div>
+              )}
+              {openModal === "Foto Desmadre" && (
+                <div className="text-center">
+                  <ProyectoFotoDesmadre />
+                </div>
+              )}
+            </div>
+          </div>,
+          document.getElementById("modal-root")
+        )}
     </section>
   );
 }

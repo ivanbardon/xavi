@@ -86,7 +86,7 @@ function Hero() {
         alt="Hero Frame"
       />
       <div
-        className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center z-2 transition-opacity duration-100"
+        className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center z-20 transition-opacity duration-100"
         style={{ opacity: textOpacity }}
       >
         <h2 className="text-4xl font-bold text-black drop-shadow-lg p-1 text-center">Arte eres tú</h2>
