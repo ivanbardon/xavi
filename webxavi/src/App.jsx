@@ -1,10 +1,10 @@
 import React from 'react'
 import './index.css'
-import NavBar from './componentes/NavBar'
-import Hero from './componentes/Hero'
-import Footer from './componentes/Footer'
-import SeccionProyectos from './componentes/SeccionProyectos'
-import Bio from './componentes/Bio'
+import NavBar from './componentes/ui/NavBar'
+import Hero from './componentes/ui/Hero'
+import Footer from './componentes/ui/Footer'
+import SeccionProyectos from './componentes/views/SeccionProyectos'
+import Bio from './componentes/ui/Bio'
 
 function App() {
   

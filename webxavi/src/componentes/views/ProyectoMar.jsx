@@ -1,5 +1,5 @@
 import React from "react";
-import Botonera from "./Botonera";
+import Botonera from "../ui/Botonera";
 
 function ProyectoMar() {
   return (

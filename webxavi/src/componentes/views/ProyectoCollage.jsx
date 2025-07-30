@@ -1,5 +1,5 @@
 import React from "react";
-import Botonera from "./Botonera";
+import Botonera from "../ui/Botonera";
 
 function ProyectoCollage() {
   return (
@@ -9,7 +9,7 @@ function ProyectoCollage() {
         alt="Soul Drawing - Ladron de Almas"
         className="w-50 h-auto object-cover flex justify-center mx-auto my-8"
       />
-      <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto">      
+      <div className="aspect-w-4 aspect-h-3 w-full max-w-3xl mx-auto">      
         <iframe
           className="w-full h-full"
           src="https://www.youtube.com/embed/P1k_hS1YQbQ"
