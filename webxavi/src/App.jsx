@@ -11,13 +11,14 @@ function App() {
 
   return (
     <>
-    <Hero />
-    <div style={{ height: '45vh' }} /> {/* Espacio para completar la animación */}
-    <NavBar />
-    <Bio />
-    <SeccionProyectos />
-    <Footer />
-    
+    <div className='main container mx-auto bg-white'>
+      <Hero />
+      <div style={{ height: '45vh' }} /> {/* Espacio para completar la animación */}
+      <NavBar />
+      <Bio />
+      <SeccionProyectos />
+      <Footer />
+    </div>
     </>
   )
 }

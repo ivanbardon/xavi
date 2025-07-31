@@ -46,22 +46,22 @@ const StatsFooter = () => (
 export default function ContactCard({ name, email, phone }) {
   const actions = [
     {
-      icon: <FaPhone className="w-8 h-auto mr-4" />,
+      icon: <FaPhone className="w-6 h-auto mr-4" />,
       text: "Llamar",
       handler: () => window.open(`tel:${phone}`, "_self"),
     },
     {
-      icon: <FaWhatsapp className="w-8 h-auto mr-4" />,
+      icon: <FaWhatsapp className="w-6 h-auto mr-4" />,
       text: "WhatsApp",
       handler: () => window.open(`https://wa.me/${phone}?text=Hola!%20Me%20gustaría%20contactarte`, "_self"),
     },
     {
-      icon: <FaTelegramPlane className="w-8 h-auto mr-4" />,
+      icon: <FaTelegramPlane className="w-6 h-auto mr-4" />,
       text: "Email",
       handler: () => window.open(`mailto:${email}?subject=Contacto&body=Hola!%20Me%20gustaría%20contactarte`, "_self"),
     },
     {
-      icon: <FaPalette className="w-8 h-auto mr-4" />,
+      icon: <FaPalette className="w-6 h-auto mr-4" />,
       text: "Galería de Arte",
       handler: () => window.open("https://g.co/kgs/5H3ub1d", "_self"),
     },
@@ -71,7 +71,7 @@ export default function ContactCard({ name, email, phone }) {
     <div className="w-full h-full flex flex-col items-center justify-center p-4 bg-white">
       <ProfileHeader name={name} email={email} />
       
-      <div className="space-y-4 w-full max-w-md mx-auto text-2xl">
+      <div className="space-y-4 w-full max-w-md mx-auto text-lg">
         {actions.map((action, index) => (
           <ActionButton
             key={index}

@@ -4,6 +4,7 @@ import ProyectoSoul from "./ProyectoSoul";
 import ProyectoCollage from "./ProyectoCollage";
 import ProyectoMar from "./ProyectoMar";
 import ProyectoFotoDesmadre from "./ProyectoFotoDesmadre";
+import { LuX } from 'react-icons/lu'
 
 function SeccionProyectos() {
   const [openModal, setOpenModal] = useState(null);
@@ -67,7 +68,7 @@ function SeccionProyectos() {
                 onClick={handleClose}
                 aria-label="Cerrar"
               >
-                ✖️
+                <LuX />
               </button>
               {openModal === "Soul Drawing" && (
                 <div className="text-center">

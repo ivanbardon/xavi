@@ -98,9 +98,9 @@ const HeroText = ({ scrollPosition, show }) => {
   });
 
   return (
-    <div className="absolute bottom-10 left-0 w-full h-full flex flex-col items-center justify-end z-20">
+    <div className="absolute bottom-20 left-0 w-full h-full flex flex-col items-center justify-end z-20">
       <div style={style(0.2)}>
-        <h2 className="elegantshadow text-5xl font-bold text-black  p-2 text-center">Arte eres tú cuando sonries</h2>
+        <h2 className="elegantshadow text-5xl font-bold text-black mx-4 mb-8 text-center">Arte eres tú cuando sonries</h2>
       </div>
       <div style={style(0.6)}>
         <p className="text-2xl text-black drop-shadow mt-8">Desliza para descubrir más</p>
