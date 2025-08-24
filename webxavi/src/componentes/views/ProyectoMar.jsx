@@ -11,7 +11,7 @@ function ProyectoMar() {
       />
       <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto">
         <iframe
-          className="w-full h-full"
+          className="w-full h-full rounded-2xl"
           src="https://www.youtube.com/embed/lZZQvRce5IA"
           title="La Mar de Net - Proyecto de Arte Sostenible"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

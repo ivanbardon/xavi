@@ -3,7 +3,7 @@ import Botonera from "../ui/Botonera";
 
 function ProyectoSoul() {
   return (
-    <div className="w-full h-dvh bg-white flex flex-col">
+    <div className="p-4  mb-4">
       <img
         src="/xavi/logo-soul2.png"
         alt="Soul Drawing - Ladron de Almas"
@@ -11,7 +11,7 @@ function ProyectoSoul() {
       />
       <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto flex flex-col">
         <iframe
-          className="w-full h-full"
+          className="w-full h-full rounded-2xl"
           src="https://www.youtube.com/embed/vXi0vCGeoz4?modestbranding=1&rel=0"
           title="Soul Drawing - Ladrón de Almas"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
