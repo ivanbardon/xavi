@@ -3,15 +3,15 @@ import Botonera from "../ui/Botonera";
 
 function ProyectoMar() {
   return (
-    <div className="p-4 mb-4">
+    <div className="px-4 mb-4">
       <img
         src="/xavi/lamardenet1.png"
         alt="La Mar de Net - Proyecto de Arte Sostenible"
-        className="w-70 h-auto object-cover flex justify-center mx-auto my-8"
+        className="w-60 h-auto object-cover flex justify-center mx-auto my-8"
       />
       <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto">
         <iframe
-          className="w-full h-full rounded-2xl"
+          className="w-full h-70 rounded-2xl"
           src="https://www.youtube.com/embed/lZZQvRce5IA"
           title="La Mar de Net - Proyecto de Arte Sostenible"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

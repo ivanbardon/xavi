@@ -33,30 +33,30 @@ function NavBar() {
       />
 
       {/* Botones redondos a la derecha */}
-      <div className="flex space-x-4">
+      <div className="flex space-x-6">
         <a
-          className="rounded-full h-8 w-8 flex items-center justify-center"
+          className="rounded-full h-6 w-6 flex items-center justify-center"
           href="https://www.instagram.com/xaviercarrillo.oficial/"
           aria-label="Instagram"
         >
           <FaInstagram className="text-9xl" />
         </a>
         <a
-          className="rounded-full h-8 w-8 flex items-center justify-center"
+          className="rounded-full h-6 w-6 flex items-center justify-center"
           href="https://www.facebook.com/xaviercarrillo.oficial/"
           aria-label="Facebook"
         >
           <FaFacebook className="text-9xl" />
         </a>
         <a
-          className="rounded-full h-8 w-8 flex items-center justify-center"
+          className="rounded-full h-6 w-6 flex items-center justify-center"
           href="https://www.tiktok.com/@xaviercarrillo.com"
           aria-label="Tiktok"
         >
           <FaTiktok className="text-9xl" />
         </a>
         <button
-          className="rounded-full h-8 w-8 flex items-center justify-center"
+          className="rounded-full h-6 w-6 flex items-center justify-center"
           onClick={() => handleOpen("Telegram")}
           aria-label="Telegram"
         >
@@ -74,7 +74,7 @@ function NavBar() {
                 onClick={handleClose}
                 aria-label="Cerrar"
               >
-                <FaCheck className="text-2xl" />
+                <FaCheck className="text-2xl text-emerald-400" />
               </button>
               {openModal === "Telegram" && (
                 <div

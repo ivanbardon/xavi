@@ -3,7 +3,7 @@ import Botonera from "../ui/Botonera";
 
 function ProyectoCollage() {
   return (
-    <div className="p-4 mb-4">
+    <div className="px-4 mb-4">
        <img
         src="/xavi/vidacollage1.png"
         alt="Soul Drawing - Ladron de Almas"
@@ -11,7 +11,7 @@ function ProyectoCollage() {
       />
       <div className="aspect-w-4 aspect-h-3 w-full max-w-3xl mx-auto">      
         <iframe
-          className="w-full h-full rounded-2xl"
+          className="w-full h-70 rounded-2xl"
           src="https://www.youtube.com/embed/P1k_hS1YQbQ"
           title="Soul Drawing - Ladron de Almas"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

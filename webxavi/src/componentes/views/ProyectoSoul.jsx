@@ -3,15 +3,15 @@ import Botonera from "../ui/Botonera";
 
 function ProyectoSoul() {
   return (
-    <div className="p-4  mb-4">
+    <div className="px-4  mb-4">
       <img
         src="/xavi/logo-soul2.png"
         alt="Soul Drawing - Ladron de Almas"
-        className="w-40 h-auto object-cover flex flex-col justify-center mx-auto mb-4"
+        className="w-50 h-auto object-cover flex flex-col justify-center mx-auto mb-4"
       />
       <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto flex flex-col">
         <iframe
-          className="w-full h-full rounded-2xl"
+          className="w-full h-70 rounded-2xl"
           src="https://www.youtube.com/embed/vXi0vCGeoz4?modestbranding=1&rel=0"
           title="Soul Drawing - Ladrón de Almas"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
