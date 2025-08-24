@@ -7,11 +7,11 @@ function ProyectoCollage() {
        <img
         src="/xavi/vidacollage1.png"
         alt="Soul Drawing - Ladron de Almas"
-        className="w-50 h-auto object-cover flex justify-center mx-auto my-8"
+        className="w-40 h-auto object-cover flex justify-center mx-auto my-8"
       />
       <div className="aspect-w-4 aspect-h-3 w-full max-w-3xl mx-auto">      
         <iframe
-          className="w-full h-70 rounded-2xl"
+          className="w-full h-60 rounded-2xl"
           src="https://www.youtube.com/embed/P1k_hS1YQbQ"
           title="Soul Drawing - Ladron de Almas"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
