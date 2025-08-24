@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaMobileAlt, FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
-import { SlPicture } from "react-icons/sl";
+import { FaPhone, FaWhatsapp, FaEnvelope, FaPalette, FaTelegramPlane } from "react-icons/fa";
 
 // Sub-componente para los botones de acción
 const ActionButton = ({ icon, text, onClick }) => (
@@ -47,8 +46,8 @@ const StatsFooter = () => (
 export default function ContactCard({ name, email, phone }) {
   const actions = [
     {
-      icon: <FaMobileAlt className="w-6 h-auto mr-4" />,
-      text: "Llamada",
+      icon: <FaPhone className="w-6 h-auto mr-4" />,
+      text: "Llamar",
       handler: () => window.open(`tel:${phone}`, "_self"),
     },
     {
@@ -62,7 +61,7 @@ export default function ContactCard({ name, email, phone }) {
       handler: () => window.open(`mailto:${email}?subject=Contacto&body=Hola!%20Me%20gustaría%20contactarte`, "_self"),
     },
     {
-      icon: <SlPicture className="w-6 h-auto mr-4" />,
+      icon: <FaPalette className="w-6 h-auto mr-4" />,
       text: "Galería de Arte",
       handler: () => window.open("https://g.co/kgs/5H3ub1d", "_self"),
     },

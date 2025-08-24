@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp, FaCheck, FaTiktok, FaTelegramPlane } from "react-icons/fa";
 import logo from '../../assets/logo.png';
 import ContactCard from "./ContactCard";
-import { LuX } from "react-icons/lu";
-
 
 function NavBar() {
   const [openModal, setOpenModal] = useState(null);
@@ -76,7 +74,7 @@ function NavBar() {
                 onClick={handleClose}
                 aria-label="Cerrar"
               >
-                <LuX className="text-2xl" />
+                <FaCheck className="text-2xl" />
               </button>
               {openModal === "Telegram" && (
                 <div
