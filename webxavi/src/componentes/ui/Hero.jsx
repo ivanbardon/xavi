@@ -61,6 +61,7 @@ function useScrollAnimation(frameCount, isReady) {
           const frameIndex = Math.floor(scrollPercent * frameCount);
           const frameSrc = `frames2/ezgif-frame-${String(frameIndex + 1).padStart(3, '0')}.webp`;
           const img = document.querySelector('.hero-frame img');
+          console.log(frameSrc)
           if (img) img.src = frameSrc;
           
           ticking.current = false;
@@ -130,6 +131,7 @@ function Hero() {
   }
 
   return (
+    <>
     <section className="w-dvw h-dvh relative overflow-hidden hero-frame">
       <img
         className="w-dvw h-100 object-cover fixed top-0 left-0 z-0"
@@ -138,6 +140,8 @@ function Hero() {
       />
       <HeroText scrollPosition={scrollPosition} show={showText} />
     </section>
+    <div style={{ height: '45vh' }} /> {/* Espacio para completar la animación */}
+    </>
   );
 }
 
