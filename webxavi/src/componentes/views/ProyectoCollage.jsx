@@ -6,7 +6,7 @@ function ProyectoCollage() {
     <div className="px-4 mb-4">
        <img
         src="/xavi/vidacollage1.png"
-        alt="Soul Drawing - Ladron de Almas"
+        alt="Soul Drawing - Ladrón de Almas"
         className="w-40 h-auto object-cover flex justify-center mx-auto my-8"
       />
       <div className="aspect-w-4 aspect-h-3 w-full max-w-3xl mx-auto">      

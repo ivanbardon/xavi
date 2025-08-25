@@ -7,7 +7,7 @@ function ProyectoFotoDesmadre() {
       <img
         src="/xavi/fotodesmadre1.png"
         alt="Foto Desmadre - Tu foto más loca"
-        className="w-40 h-auto object-cover flex justify-center mx-auto mb-8 my-4"
+        className="w-30 h-auto object-cover flex justify-center mx-auto mb-8 my-4"
       />
       <img
         src="/xavi/fotodesmadre4.png"
