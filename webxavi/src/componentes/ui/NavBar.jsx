@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import { FaInstagram, FaFacebook, FaWhatsapp, FaCheck, FaTiktok, FaTelegramPlane } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaCheck, FaTiktok, FaTelegramPlane } from "react-icons/fa";
 import logo from '../../assets/logo.png';
 import ContactCard from "./ContactCard";
 
