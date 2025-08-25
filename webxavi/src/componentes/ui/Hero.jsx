@@ -113,7 +113,7 @@ const HeroText = ({ scrollPosition, show }) => {
 // --- Main Component ---
 
 function Hero() {
-  const frameCount = 83;
+  const frameCount = 137;
   const { loading } = useImagePreloader(frameCount, (i) => `frames2/ezgif-frame-${String(i).padStart(3, '0')}.webp`);
   const { scrollPosition } = useScrollAnimation(frameCount, !loading);
   const [showText, setShowText] = useState(false);
