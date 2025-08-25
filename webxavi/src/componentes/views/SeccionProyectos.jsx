@@ -26,31 +26,31 @@ function SeccionProyectos() {
 
   return (
     <section className="container mx-auto p-4 bg-white relative z-10">
-      <hr className="border-gray-300 mb-8" />
+      <hr className="border-gray-400 mb-8" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
-          className="bg-white border-1 p-4 rounded-lg shadow cursor-pointer"
+          className="bg-white border-e-zinc-400 border-1 p-4 rounded-lg shadow cursor-pointer"
           onClick={() => handleOpen("Soul Drawing")}
         >
           <h3 className="text-xl font-semibold">Soul Drawing</h3>
           <p className="text-gray-600">Ladrón de Almas</p>
         </div>
         <div
-          className="bg-white border-1 p-4 rounded-lg shadow cursor-pointer"
+          className="bg-white border-e-zinc-400 border-1 p-4 rounded-lg shadow cursor-pointer"
           onClick={() => handleOpen("La Vida Collage")}
         >
           <h3 className="text-xl font-semibold">La Vida Collage</h3>
           <p className="text-gray-600">Tu vida en un cuadro</p>
         </div>
         <div
-          className="bg-white border-1 p-4 rounded-lg shadow cursor-pointer"
+          className="bg-white border-e-zinc-400 border-1 p-4 rounded-lg shadow cursor-pointer"
           onClick={() => handleOpen("La Mar de Net")}
         >
           <h3 className="text-xl font-semibold">La Mar de Net</h3>
           <p className="text-gray-600">Arte sostenible</p>
         </div>
         <div
-          className="bg-white border-1 p-4 rounded-lg shadow cursor-pointer"
+          className="bg-white border-e-zinc-400 border-1 p-4 rounded-lg shadow cursor-pointer"
           onClick={() => handleOpen("Foto Desmadre")}
         >
           <h3 className="text-xl font-semibold">Foto Desmadre</h3>
