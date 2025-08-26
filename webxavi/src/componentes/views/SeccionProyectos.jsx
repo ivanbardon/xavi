@@ -36,7 +36,7 @@ function SeccionProyectos() {
         <ProjectCard
           title="Vida Collage"
           description="Tu vida en un cuadro"
-          onClick={() => handleOpen("La Vida Collage")}
+          onClick={() => handleOpen("Vida Collage")}
         />
         <ProjectCard
           title="La Mar de Net"
@@ -45,7 +45,7 @@ function SeccionProyectos() {
         />
         <ProjectCard
           title="Wild Shot"
-          description="Tu foto más loca"
+          description="Tu foto más salvaje"
           onClick={() => handleOpen("Wild Shot")}
         />
       </div>
