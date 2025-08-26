@@ -34,7 +34,7 @@ function SeccionProyectos() {
           onClick={() => handleOpen("Soul Drawing")}
         />
         <ProjectCard
-          title="La Vida Collage"
+          title="Vida Collage"
           description="Tu vida en un cuadro"
           onClick={() => handleOpen("La Vida Collage")}
         />
@@ -58,7 +58,7 @@ function SeccionProyectos() {
               <ProyectoSoul />
             </div>
           )}
-          {openModal === "La Vida Collage" && (
+          {openModal === "Vida Collage" && (
             <div className="text-center">
               <ProyectoCollage />
             </div>

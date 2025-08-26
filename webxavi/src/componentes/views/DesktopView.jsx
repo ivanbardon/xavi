@@ -3,14 +3,12 @@ import Bio from '../ui/Bio';
 import SocialButtons from '../ui/SocialButtons';
 
 // Lazy load project components for better performance
-const InicioDesktop = lazy(() => import('./InicioDesktop'));
 const ProyectoSoul = lazy(() => import('./ProyectoSoul'));
 const ProyectoCollage = lazy(() => import('./ProyectoCollage'));
 const ProyectoMar = lazy(() => import('./ProyectoMar'));
 const ProyectoFotoDesmadre = lazy(() => import('./ProyectoFotoDesmadre'));
 
 const projectSections = [
-  { title: 'Inicio', component: InicioDesktop },
   { title: 'Soul Drawing', component: ProyectoSoul },
   { title: 'Vida Collage', component: ProyectoCollage },
   { title: 'La Mar de Net', component: ProyectoMar },
