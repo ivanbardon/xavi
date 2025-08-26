@@ -12,7 +12,7 @@ function Bio() {
       <p className="text-lg p-8 text-center">
         <span className="text-2xl block mb-2 text-primary-700 font-bold">· Xavier Carrillo ·</span>
          Artista multidisciplinar que trabaja entre el arte plástico, el collage digital y la performance.<br/>
-         En la galeria-taller de Valencia, su obra combina una estética contemporánea con una fuerte carga emocional y conciencia ecológica.
+         En la <a className='underline' href='https://g.co/kgs/5H3ub1d'>galeria-taller</a> de Valencia, su obra combina una estética contemporánea con una fuerte carga emocional y conciencia ecológica.
       </p>
     </section>
   );
