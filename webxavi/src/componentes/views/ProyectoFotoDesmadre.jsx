@@ -5,12 +5,12 @@ function ProyectoFotoDesmadre() {
   return (
     <div className="px-4 mb-4">
       <img
-        src="/xavi/fotodesmadre1.png"
+        src="fotodesmadre1.png"
         alt="Foto Desmadre - Tu foto más loca"
-        className="w-30 h-auto object-cover flex justify-center mx-auto mb-8 my-4"
+        className="w-90 h-auto object-cover flex justify-center mx-auto mb-8 my-4"
       />
       <img
-        src="/xavi/fotodesmadre4.png"
+        src="fotodesmadre4.png"
         alt="Foto Desmadre - Tu foto más loca"
         className="w-90 h-auto object-cover mx-auto mb-8"
       />
@@ -18,7 +18,7 @@ function ProyectoFotoDesmadre() {
         No es una foto… es una explosión de tu lado más salvaje, divertido e inesperado. Aquí no buscamos tu mejor pose, buscamos la más loca. Déjate llevar, ríe, grita, muévete…  y transformaré esa energía en una  obra artística única, con técnica mixta: fotografía + pintura
       </p>
       <hr className="my-4 text-gray-300" />
-      <Botonera />
+      <Botonera downloadUrl="WildShot.pdf" />
     </div>
   );
 }

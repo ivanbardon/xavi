@@ -5,7 +5,7 @@ function ProyectoCollage() {
   return (
     <div className="px-4 mb-4">
        <img
-        src="/xavi/vidacollage1.png"
+        src="vidacollage1.png"
         alt="Soul Drawing - Ladrón de Almas"
         className="w-40 h-auto object-cover flex justify-center mx-auto my-8"
       />
@@ -25,7 +25,7 @@ function ProyectoCollage() {
           Tu vida es arte, aunque no lo sepas todavía
       </p>
       <hr className="my-4 text-gray-300" />
-      <Botonera downloadUrl="/xavi/vidacollage1.png" />
+      <Botonera downloadUrl="VidaCollage.pdf" />
     </div>
   );
 }

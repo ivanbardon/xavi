@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaWhatsapp, FaEnvelope, FaPalette, FaTelegramPlane } from "react-icons/fa";
+import { FaPhone, FaWhatsapp, FaPalette, FaTelegramPlane } from "react-icons/fa";
 
 // Sub-componente para los botones de acción
 const ActionButton = ({ icon, text, onClick }) => (

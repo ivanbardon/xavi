@@ -44,9 +44,9 @@ function SeccionProyectos() {
           onClick={() => handleOpen("La Mar de Net")}
         />
         <ProjectCard
-          title="Foto Desmadre"
+          title="Wild Shot"
           description="Tu foto más loca"
-          onClick={() => handleOpen("Foto Desmadre")}
+          onClick={() => handleOpen("Wild Shot")}
         />
       </div>
 
@@ -68,7 +68,7 @@ function SeccionProyectos() {
               <ProyectoMar />
             </div>
           )}
-          {openModal === "Foto Desmadre" && (
+          {openModal === "Wild Shot" && (
             <div className="text-center">
               <ProyectoFotoDesmadre />
             </div>

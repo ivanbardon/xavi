@@ -5,7 +5,7 @@ function ProyectoMar() {
   return (
     <div className="px-4 mb-4">
       <img
-        src="/xavi/lamardenet1.png"
+        src="lamardenet1.png"
         alt="La Mar de Net - Proyecto de Arte Sostenible"
         className="w-50 h-auto object-cover flex justify-center mx-auto my-8"
       />
@@ -22,7 +22,7 @@ function ProyectoMar() {
           Es un proyecto artístico y educativo que busca concienciar sobre el problema del plástico en el mar desde una perspectiva creativa y no impositiva. A través de una exposición artística, un cuento infantil ilustrado, talleres participativos y actividades para todos los públicos, invita a reflexionar sobre la sostenibilidad y el respeto por nuestro entorno marino. El proyecto se basa en el poder del arte para transformar, emocionar y educar.
         </p>
       <hr className="my-4 text-gray-300" />
-      <Botonera downloadUrl="/xavi/lamardenet1.png" />
+      <Botonera downloadUrl="lamarpdf.pdf" />
     </div>
   );
 }

@@ -4,7 +4,7 @@ function Bio() {
   return (
     <section className="bio-section relative z-10 bg-white">
       <img
-        src="/xavi/xavi-contacto.png"
+        src="xavi-contacto.png"
         alt="Mi foto"
         className="w-80 h-auto object-cover rounded-none shadow-none flex justify-center mx-auto mb-8"
       />

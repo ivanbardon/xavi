@@ -5,7 +5,7 @@ function ProyectoSoul() {
   return (
     <div className="px-4  mb-4">
       <img
-        src="/xavi/logo-soul2.png"
+        src="logo-soul2.png"
         alt="Soul Drawing - Ladron de Almas"
         className="w-40 h-auto object-cover flex flex-col justify-center mx-auto mb-4"
       />
@@ -23,7 +23,7 @@ function ProyectoSoul() {
           Soul Drawings es una performance de arte abstracto en la que Xavier Carrillo plasma sobre el lienzo lo que siente de la persona en ese instante de sus vidas. A través de la mirada y de un solo trazo, el artista representa el alma del público de una forma auténtica y cautivadora
         </p>
         <hr className="my-4 text-gray-300" />
-        <Botonera downloadUrl="/xavi/logo-soul2.png" />
+        <Botonera downloadUrl="Souldrawings.pdf" />
       </div>  
     </div>
   );
