@@ -1,0 +1,1 @@
+import{j as e}from"./index-BnIBDIV-.js";function o({downloadUrl:r}){return e.jsx("div",{className:"flex justify-center relative z-50",children:e.jsx("a",{href:r,download:!0,className:"bg-white border border-black px-4 py-2 rounded-lg shadow hover:bg-blue-50 text-black",children:"Descarga más información"})})}export{o as B};
